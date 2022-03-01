@@ -8,20 +8,113 @@
   <link rel="stylesheet" href="./resources/css/index.css">
 </head>
 <body>
-  <header>
+  <header class="center">
     <h1>Kanyisa's CSS Cheatsheet</h1>
     <figure>
-      <img src="./resources/images/notes-pic.jpg" alt="">
+      <img id="banner-img" src="./resources/images/notes-pic.jpg" alt="">
       <figcaption>Photo by <a href="https://unsplash.com/@dtravisphd?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">David Travis</a> on <a href="https://unsplash.com/s/photos/notes?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
       </figcaption>
     </figure>
   </header>
 
   <main>
+    <section>
+      <h2 class="center">Positioning</h2>
+      <p>The position CSS property sets how an element is positioned in a document.
+        The <span>top</span>, <span>right</span>, <span>bottom</span> and <span>left</span>
+        properties determine the final location of positioned element.
+      </p>
 
+      <table>
+        <thead>
+          <tr>
+            <th>Property</th>
+            <th>Description</th>
+            <th>Example</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Static</td>
+            <td>
+              <ul>
+                <li>The default CSS position applicable to all HTML elements</li>
+                <li>This position place the HTML elements based on normal document flow</li>
+                <li>Cannot use top/right/bottom/left properties</li>
+              </ul>
+            </td>
+            <td><img class="table-images" src="./resources/images/css-static-position.png  " alt=""></td>
+          </tr>
+          <tr>
+            <td>Relative</td>
+            <td>
+              <ul>
+                <li>places the element relative to its normal position</li>
+              </ul>
+            </td>
+            <td><img class="table-images" src="./resources/images/css-relative-position.png" alt=""></td>
+          </tr>
+          <tr>
+            <td>Absolute</td>
+            <td>It is relative to the original position of the element.</td>
+            <td><img class="table-images" src="./resources/images/css-absolute-position.png" alt=""></td>
+          </tr>
+          <tr>
+            <td>Fixed</td>
+            <td>Default</td>
+            <td><img class="table-images" src="./resources/images/css-fixed-position.png" alt=""></td>
+          </tr>
+          <tr>
+            <td>Sticky</td>
+            <td>Default</td>
+            <td><img class="table-images" src="" alt=""></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2 class="center">Display</h2>
+      <p>The position CSS property sets how an element is positioned in a document.
+        The <span>top</span>, <span>right</span>, <span>bottom</span> and <span>left</span>
+        properties determine the final location of positioned element.
+      </p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Property</th>
+            <th>Description</th>
+            <th>Example</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Block</td>
+            <td>The default position of the element.</td>
+            <td>Something</td>
+          </tr>
+          <tr>
+            <td>Inline</td>
+            <td>It is relative to the original position of the element.</td>
+            <td>Something</td>
+          </tr>
+          <tr>
+            <td>Inline-block</td>
+            <td>Default</td>
+            <td>Something</td>
+          </tr>
+          <tr>
+            <td>Sticky</td>
+            <td>Default</td>
+            <td>Something</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
   </main>
 
-  <footer>
+  <footer class="center">
     <p>Created by Kanyisa Ntombini</p>
   </footer>
 </body>
