@@ -74,6 +74,10 @@ ul {
   margin: 0 10px;
 }
 
+.inner-list {
+  list-style: inside;
+}
+
 .table-images {
   width: 300px;
 }

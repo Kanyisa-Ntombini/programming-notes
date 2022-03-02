@@ -41,6 +41,7 @@
                 <li>The default CSS position applicable to all HTML elements</li>
                 <li>This position place the HTML elements based on normal document flow</li>
                 <li>Cannot use top/right/bottom/left properties</li>
+                <li>Page scrolling does affect this position</li>
               </ul>
             </td>
             <td><img class="table-images" src="./resources/images/css-static-position.png  " alt=""></td>
@@ -49,26 +50,42 @@
             <td>Relative</td>
             <td>
               <ul>
-                <li>places the element relative to its normal position</li>
+                <li>Places the element relative to its normal position</li>
+                <li>The position is relative to normal document flow</li>
+                <li>The top/right/bottom/left properties can be applied to elements</li>
+                <li>Page scrolling does affect this position</li>
               </ul>
-              position is relative to normal document flow. Here top/right/bottom/left properties can be applied to elements.
             </td>
             <td><img class="table-images" src="./resources/images/css-relative-position.png" alt=""></td>
           </tr>
           <tr>
             <td>Absolute</td>
-            <td>It is relative to the original position of the element.</td>
+            <td>
+              <ul>
+                <li>Places the element at the exact position specified</li>
+                <li>Element is completely removed from normal document flow.</li>
+                <li>This position is relative to:
+                  <ul>
+                    <li>Its parent element position when parent element position is relative/absolute</li>
+                    <li>The document body when parent element position is static</li>
+                    <li>The document body when there is no parent element</li>
+                  </ul>
+                <li>Page scrolling does affect this position</li>
+                </li>
+              </ul>
+            </td>
             <td><img class="table-images" src="./resources/images/css-absolute-position.png" alt=""></td>
           </tr>
           <tr>
             <td>Fixed</td>
-            <td>Default</td>
+            <td>
+              <ul>
+                <li>Position places the element at a fixed place relative to the viewport</li>
+                <li>This position element is completely removed from normal document flow</li>
+                <li>Page scrolling does not affect this position</li>
+              </ul>
+            </td>
             <td><img class="table-images" src="./resources/images/css-fixed-position.png" alt=""></td>
-          </tr>
-          <tr>
-            <td>Sticky</td>
-            <td>Default</td>
-            <td><img class="table-images" src="" alt=""></td>
           </tr>
         </tbody>
       </table>
