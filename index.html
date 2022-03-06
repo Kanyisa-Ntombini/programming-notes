@@ -6,15 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CSS Cheat Sheet</title>
   <link rel="stylesheet" href="./resources/css/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Sansita+Swashed:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
   <header class="center">
     <h1>Kanyisa's CSS Cheatsheet</h1>
+    <!--
     <figure>
       <img id="banner-img" src="./resources/images/notes-pic.jpg" alt="">
       <figcaption>Photo by <a href="https://unsplash.com/@dtravisphd?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">David Travis</a> on <a href="https://unsplash.com/s/photos/notes?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
       </figcaption>
-    </figure>
+    </figure> -->
   </header>
 
   <main>
@@ -22,7 +26,7 @@
       <h2 class="center">Positioning</h2>
       <p>The position CSS property sets how an element is positioned in a document.
         The <span>top</span>, <span>right</span>, <span>bottom</span> and <span>left</span>
-        properties determine the final location of positioned element.
+        properties determine the final location of the positioned element.
       </p>
 
       <table>
@@ -93,10 +97,7 @@
 
     <section>
       <h2 class="center">Display</h2>
-      <p>The position CSS property sets how an element is positioned in a document.
-        The <span>top</span>, <span>right</span>, <span>bottom</span> and <span>left</span>
-        properties determine the final location of positioned element.
-      </p>
+      <p>Each element in CSS has a rectangular box that surrounds it. The Display property lets how know how this box will be shown in our web page.</p>
 
       <table>
         <thead>
@@ -109,23 +110,37 @@
         <tbody>
           <tr>
             <td>Block</td>
-            <td>The default position of the element.</td>
-            <td>Something</td>
+            <td>
+              <ul>
+                <li>It fills the entire width of the page by default</li>
+                <li>It is not displayed in the same line as the content around it therefore a new line is required for each element</li>
+                <li>The width and height properties can be set</li>
+              </ul>
+            </td>
+            <td><img class="table-images" src="./resources/images/block.jpeg" alt=""></td>
           </tr>
           <tr>
             <td>Inline</td>
-            <td>It is relative to the original position of the element.</td>
-            <td>Something</td>
+            <td>
+              <ul>
+                <li>It has a box that wraps tightly around its content, only taking up the amount of space necessary to display its content</li>
+                <li>It does not require a new line after each element</li>
+                <li>The height and width of these elements cannot be specified in the CSS document</li>
+                <li>Examples: &lt;a&gt; , &lt;em&gt; and &lt;strong&gt;</li>
+              </ul>
+            </td>
+            <td><img class="table-images" src="./resources/images/inline.jpeg" alt=""></td>
           </tr>
           <tr>
             <td>Inline-block</td>
-            <td>Default</td>
-            <td>Something</td>
-          </tr>
-          <tr>
-            <td>Sticky</td>
-            <td>Default</td>
-            <td>Something</td>
+            <td>
+              <ul>
+                <li>It combines features of both inline and block elements</li>
+                <li>Inline-block elements can appear next to each other</li>
+                <li>The width and height properties can be set</li>
+              </ul>
+            </td>
+            <td><img class="table-images" src="./resources/images/inlineblock.jpeg" alt=""></td>
           </tr>
         </tbody>
       </table>
