@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CSS Cheat Sheet</title>
   <link rel="stylesheet" href="./resources/css/index.css">
+  <link rel="stylesheet" href="./resources/css/flexbox.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato&family=Sansita+Swashed:wght@300&display=swap" rel="stylesheet">
@@ -13,15 +14,117 @@
 <body>
   <header class="center">
     <h1>Kanyisa's CSS Cheatsheet</h1>
-    <!--
-    <figure>
-      <img id="banner-img" src="./resources/images/notes-pic.jpg" alt="">
-      <figcaption>Photo by <a href="https://unsplash.com/@dtravisphd?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">David Travis</a> on <a href="https://unsplash.com/s/photos/notes?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-      </figcaption>
-    </figure> -->
   </header>
 
   <main>
+    <section>
+      <h2>Flexbox</h2>
+      <article>
+        <h3>Display: Flex</h3>
+        <div class="flex">
+          <div class="box blue">Blue</div>
+          <div class="box coral">Coral</div>
+          <div class="box purple">Purple</div>
+        </div>
+      </article>
+      <article>
+        <h3>Display: Inline-flex</h3>
+        <div class="inline-flex">
+          <div class="box blue">Blue</div>
+          <div class="box coral">Coral</div>
+          <div class="box purple">Purple</div>
+        </div>
+        <div class="inline-flex">
+          <div class="box blue">Blue</div>
+          <div class="box coral">Coral</div>
+          <div class="box purple">Purple</div>
+        </div>
+      </article>
+      <article>
+        <h3>Justify-Content</h3>
+        <p>Justifies content from left to right across a page.</p>
+        <p>
+          .flex-start { <br>
+            display: flex; <br>
+            justify-content: flex-start; <br>
+          }
+        </p>
+        <div>
+          <h4>Justify-Content: Flex-start</h4>
+          <div class="justify-container flex-start">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+          </div>
+          <h4>Justify-Content: Flex-end</h4>
+          <div class="justify-container flex-end">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+          </div>
+          <h4>Justify-Content: Center</h4>
+          <div class="justify-container flex-center">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+          </div>
+          <h4>Justify-Content: Space-around</h4>
+          <div class="justify-container space-around">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+          </div>
+          <h4>Justify-Content: Space-between</h4>
+          <div class="justify-container space-between">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+          </div>
+        </div>
+      </article>
+      <article>
+        <h3>Align-Items</h3>
+        <p>Aligns flex items vertically within a flex container.</p>
+        <p>
+          div { <br>
+            display: flex; <br>
+            align-items: flex-start; <br>
+          }
+        </p>
+        <h4>Align-Items: Flex-start</h4>
+        <div class="align-container align-start">
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+        </div>
+        <h4>Align-Items: Flex-end</h4>
+        <div class="align-container align-end">
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+        </div>
+        <h4>Align-Items: Center</h4>
+        <div class="align-container align-center">
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+        </div>
+        <h4>Align-Items: Baseline</h4>
+        <div class="align-container align-baseline">
+          <div class="box"></div>
+          <div class="box" id="baseline-center"></div>
+          <div class="box"></div>
+        </div>
+        <h4>Align-Items: Stretch</h4>
+        <p>The item will stretch from top to bottom in the container if a minimum height has been set or no height has been set.</p>
+        <div class="align-container align-stretch">
+          <div class="box-stretch"></div>
+          <div class="box-stretch"></div>
+          <div class="box-stretch"></div>
+        </div>
+      </article>
+    </section>
+
     <section>
       <h2 class="center">Positioning</h2>
       <p>The position CSS property sets how an element is positioned in a document.

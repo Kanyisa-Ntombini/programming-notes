@@ -1,86 +1,63 @@
+/* Universal Styles*/
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
-
 body {
   margin: 20px;
   background-color: aliceblue;
   font-family: 'Lato', sans-serif;
 }
-
+h1 {
+  font-size: 70px;
+  font-family: 'Sansita Swashed', cursive;
+}
+h2 {
+  font-size: 40px;
+}
+h3 {
+  font-size: 30px;
+  font-weight: normal;
+}
+h1, h2 {
+  color: lightseagreen;
+}
+span {
+  color: lightseagreen;
+}
 .center {
   text-align: center;
 }
 
 /* HEADER */
-h1 {
-  font-size: 70px;
-  padding: 20px 0;
-  font-family: 'Sansita Swashed', cursive;
-  color: lightseagreen;
-}
-
-#banner-img {
-  width: 250px;
-  height: 200px;
-  padding-top: 20px;
-}
-
-figcaption {
-  font-size: 15px;
-  font-weight: 100;
-}
-
-a {
-  color: lightseagreen;
-}
 
 /* MAIN */
 main, section {
   margin: 30px 20px;
 }
-
-h2 {
-  font-size: 40px;
-  font-family: 'Sansita Swashed', cursive;
-  color: lightseagreen;
-}
-
-h3 {
-  font-size: 30px;
-}
-
 h2, p {
   margin: 20px 0;
 }
-
-span {
-  color: lightseagreen;
-}
-
 th {
   text-align: center;
   font-size: 20px;
   background-color: lightblue;
 }
-
 th, td {
   border: 2px solid black;
   padding: 10px;
   border: 2px solid lightblue;
 }
-
 ul {
   margin: 0 10px;
 }
-
 .inner-list {
   list-style: inside;
 }
-
 .table-images {
   width: 300px;
 }
+
 
 /* FOOTER */
