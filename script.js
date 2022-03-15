@@ -1,7 +1,7 @@
 const btn = document.querySelector('button');
 
 function buttonFunction() {
-  alert('Hello World!');
+  document.body.style.backgroundColor = 'lightblue';
   console.log('Hello World!');
 }
 
