@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid - CSS Cheat Sheet</title>
+  <link rel="stylesheet" href="../resources/css/index.css">
+  <link rel="stylesheet" href="../resources/css/flexbox.css">
+  <link rel="stylesheet" href="../resources/css/grid.css">
+</head>
+<body>
+  <header>
+    <h1>Kanyisa's CSS Cheatsheet</h1>
+    <nav>
+      <a href="./tabs/grid.html">Grid</a>
+      <a href="#">Flexbox</a>
+      <a href="#">Positioning</a>
+      <a href="#">Display</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Grid</h2>
+    <ul>
+      <li>By default contain one column</li>
+      <li>Rows are defined as a percentage of the grid’s height</li>
+      <li>Columns are defined as a percentage of its width</li>
+    </ul>
+    <p>Shortcut:</p>
+    <p>grid-template: grid-template-rows / grid-template-columns </p>
+    <p>grid-area: grid-row-start / grid-column-start / grid-row-end / grid-column-end;</p>
+    <p>gap: row-gap / column-gap;</p>
+
+    <section>
+      <h3>Creating Columns</h3>
+      <div>
+        .container-grid { <br>
+          display: grid; <br>
+          grid-template-columns: 100px 300px 200px; <br>
+        }
+      </div>
+      <div class="grid-container template-columns">
+        <div class="box-grid">A</div>
+        <div class="box-grid">B</div>
+        <div class="box-grid">C</div>
+        <div class="box-grid">D</div>
+        <div class="box-grid">E</div>
+        <div class="box-grid">F</div>
+        <div class="box-grid">G</div>
+      </div>
+    </section>
+
+    <section>
+      <h3>Creating Rows</h3>
+      <div>
+        .container-grid { <br>
+          display: grid; <br>
+          grid-template-columns: 100px 300px 200px; <br>
+          grid-template-rows: 75px 75px 75px 75px;
+        }
+      </div>
+      <div class="grid-container template-rows">
+        <div class="box-grid">A</div>
+        <div class="box-grid">B</div>
+        <div class="box-grid">C</div>
+        <div class="box-grid">D</div>
+        <div class="box-grid">E</div>
+        <div class="box-grid">F</div>
+        <div class="box-grid">G</div>
+        <div class="box-grid">H</div>
+        <div class="box-grid">I</div>
+        <div class="box-grid">J</div>
+      </div>
+    </section>
+
+    <section>
+      <h3>Using Fractions</h3>
+      <div>Ensures no overlapping outside the container</div>
+      <div>
+        .container-grid { <br>
+          display: grid; <br>
+          grid-template: 1fr 3fr 2fr / 1fr 1fr 1fr; <br>
+        }
+      </div>
+      <div class="grid-container fractions">
+        <div class="box-grid">A</div>
+        <div class="box-grid">B</div>
+        <div class="box-grid">C</div>
+        <div class="box-grid">D</div>
+        <div class="box-grid">E</div>
+        <div class="box-grid">F</div>
+        <div class="box-grid">G</div>
+      </div>
+    </section>
+
+    <section>
+      <h3>Repeat Function</h3>
+      <div>
+        .container-grid { <br>
+          display: grid; <br>
+          grid-template: repeat(2, 1fr) / repeat(2, 1fr 1fr); - means create 2 columns with 1fr and 2fr and then create two columns again with 1fr and 2fr<br>
+        }
+      </div>
+      <div class="grid-container repeat">
+        <div class="box-grid">A</div>
+        <div class="box-grid">B</div>
+        <div class="box-grid">C</div>
+        <div class="box-grid">D</div>
+        <div class="box-grid">E</div>
+        <div class="box-grid">F</div>
+        <div class="box-grid">G</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="center">
+    <p>Created by Kanyisa Ntombini</p>
+  </footer>
+</body>
+</html>
