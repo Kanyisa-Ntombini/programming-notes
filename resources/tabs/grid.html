@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid - CSS Cheat Sheet</title>
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="../css/grid.css">
+</head>
+<body>
+  <div class="">
+    <div class="header container-grid">
+      <h1>Kanyisa's CSS Cheatsheet</h1>
+      <div class="nav">
+        <div><a href="index.html">Hime</a></div>
+        <a href="../tabs/grid.html">Grid</a>
+        <a href="../tabs/flexbox.html">Flexbox</a>
+        <a href="index.html">Positioning</a>
+        <a href="index.html">Display</a>
+      </div>
+    </div>
+  
+    <div id="definition" class="container-grid">
+      <h2>Grid</h2>
+      <h3>Creating a Grid</h3>
+      <p>You define a container and then use the display property to say this container is a grid like this:</p>
+      <div>.container {<br>display: grid; <br>}</div>
+      <p>Then you indicate how many rows and columns you want in the container by using grid-template</p>
+      <p>You also use grid-template to indicate how big you want these rows and columns to be</p>
+      <p>By default a grid container has one columns</p>
+    </div>
+
+    <div id="grid-template" class="container-grid">
+        <h3>Grid-template</h3>
+        <p>grid-template: grid-template-rows / grid-template-columns;</p>
+  
+        <h4>grid-template-rows</h4>
+        <div>
+          #template-rows { <br>
+            grid-template-rows: repeat(5, 45px); <br>
+          }
+        </div>
+        <div class="container-small grid" id="template-rows">
+          <div class="box-grid">A</div>
+          <div class="box-grid">B</div>
+          <div class="box-grid">C</div>
+          <div class="box-grid">D</div>
+          <div class="box-grid">E</div>
+        </div><br><br>
+
+        <h4>grid-template-columns</h4>
+        <div>
+          #template-columns { <br>
+            grid-template-columns: repeat(5, 45px); <br>
+       }</div>
+        <div class="container-small grid" id="template-columns">
+          <div class="box-grid">A</div>
+          <div class="box-grid">B</div>
+          <div class="box-grid">C</div>
+          <div class="box-grid">D</div>
+          <div class="box-grid">E</div>
+        </div>
+    </div>
+
+    <div class="somefractions" class="container-grid">
+      <h2>Fractions</h2>
+      <p>Ensures no overlapping outside the container</p>
+      <div>
+        #fractions { <br>
+        grid-template: 1fr 1fr 1fr / 1fr 3fr 2fr ;<br>
+      }</div>
+      <div class="container-small grid" id="fractions">
+        <div class="box-grid">A</div>
+        <div class="box-grid">B</div>
+        <div class="box-grid">C</div>
+        <div class="box-grid">D</div>
+        <div class="box-grid">E</div>
+        <div class="box-grid">F</div>
+        <div class="box-grid">G</div>
+      </div>
+    </div>
+
+    <div id="minmax" class="container-grid">
+      <h2>Minmax</h2>
+      <div>
+        #fractions { <br>
+        grid-template: 100px 100px 1fr / 1fr 3fr 2fr ;<br>
+      }</div>
+      <div id="minmax" class="container-small grid">
+        <div class="box-grid">A</div>
+        <div class="box-grid">B</div>
+        <div class="box-grid">C</div>
+        <div class="box-grid">D</div>
+        <div class="box-grid">E</div>
+        <div class="box-grid">F</div>
+        <div class="box-grid">G</div>
+      </div>
+    </div>
+
+    <div id="gap" class="container-grid">
+      <h2>Grip Gap</h2>
+      <p>row-gap: 10px</p>
+      <p>column-gap: 20px</p>
+      <p>gap: row_number column_number</p>
+    </div>
+
+    <div id="grid-items" class="container-grid">
+      <h2>Grid Items</h2>
+      <p>The individual blogs in a grid</p>
+      <p>We can make these blocks span several rows and/or columns</p>
+      <p>Row grid lines and column grid lines start at 1 and end at a value that is 1 greater than the number of rows or columns the grid has.</p>
+      <p>grid-row: grid-row-start / grid-row-end;</p>
+      <p>grid-column: grid-column-start / grid-column-end;</p>
+      <p>grid-area: grid-row-start / grid-column-start / grid-row-end / grid-column-end;</p>
+      <div>
+        .d { <br>
+          grid-row-start: 2; <br>
+          grid-row-end: 4; <br>
+          grid-column-start: 1; <br>
+          grid-column-end: 3; <br>
+        } <br> <br>
+        .e {
+          grid-row-start: 2; <br>
+          grid-row-end: 4; <br>
+        } <br><br>
+        .b {
+          grid-column-start: 2; <br>
+          grid-column-end: 4; <br>
+        }
+      </div>
+      <div class="container-small grid" id="grid-start-end">
+        <div class="box-grid a">A</div>
+        <div class="box-grid b">B</div>
+        <div class="box-grid c">C</div>
+        <div class="box-grid d">D</div>
+        <div class="box-grid e">E</div>
+        <div class="box-grid f">F</div>
+        <div class="box-grid g">G</div>
+      </div>
+    </div>
+
+    <div class="container-grid">
+      <h2>Grid-template-areas</h2>
+      <p>It is declared in the container.</p>
+      <div>
+        #grid-template-areas { <br>
+          grid-template-areas: "heading1 heading1" "main1 main2" "footer1 footer1"; <br>
+          grid-template-rows: 1fr 2fr 1fr; <br>
+          grid-template-columns: 2fr 1fr; <br>
+          gap: 5px; <br>
+        } <br>
+        .heading1 { <br>
+          grid-area: heading1; <br>
+        } <br>
+        .main1 { <br>
+          grid-area: main1; <br>
+        } <br>
+        .main2 { <br>
+          grid-area: main2; <br>
+          background-color: pink; <br>
+        } <br>
+        .footer1 { <br>
+          grid-area: footer1; <br>
+        } <br>
+      </div>
+      <div class="container-small grid" id="grid-template-areas">
+        <div class="box-grid heading1">Heading1</div>
+        <div class="box-grid main1">Main1</div>
+        <div class="box-grid main2">Main2</div>
+        <div class="box-grid footer1">Footer1</div>
+      </div>
+    </div>
+
+    <div class="container-grid">
+      <h2>overlapping Elements</h2>
+      <p></p>
+      <div>
+        #grid-template-areas { <br>
+          grid-template-areas: "heading1 heading1" "main1 main2" "footer1 footer1"; <br>
+          grid-template-rows: 1fr 2fr 1fr; <br>
+          grid-template-columns: 2fr 1fr; <br>
+          gap: 5px; <br>
+        } <br>
+        .heading1 { <br>
+          grid-area: heading1; <br>
+        } <br>
+        .main1 { <br>
+          grid-area: main1; <br>
+        } <br>
+        .main2 { <br>
+          grid-area: main2; <br>
+          background-color: pink; <br>
+        } <br>
+        .footer1 { <br>
+          grid-area: footer1; <br>
+        } <br>
+      </div>
+      <div class="container-small grid" id="overlapping">
+        <div class="box-grid heading2">Heading2</div>
+        <div class="box-grid main3">Main3</div>
+        <div class="box-grid main4">Main4</div>
+        <div class="box-grid footer2">Footer2</div>
+        <div class="box-grid footer3">Footer3</div>
+        <div class="box-grid footer4">Footer4</div>
+        <div class="box-grid overlap">Overlap</div>
+      </div>
+    </div>
+
+    <div>
+      <h2>Justify-items</h2>
+      <div class="grid" id="justify-items">
+        <div class="box-grid justify">AAAA</div>
+        <div class="box-grid justify">BBBB</div>
+        <div class="box-grid justify">CCCC</div>
+        <div class="box-grid justify">DDDD</div>
+        <div class="box-grid justify">EEEE</div>
+        <div class="box-grid justify">FFFF</div>
+      </div>
+    </div>
+
+    <div>
+      <h2>Justify-content</h2>
+      <div class="grid" id="justify-content">
+        <div class="box-grid justify2">AAAA</div>
+        <div class="box-grid justify2">BBBB</div>
+        <div class="box-grid justify2">CCCC</div>
+        <div class="box-grid justify2">DDDD</div>
+        <div class="box-grid justify2">EEEE</div>
+        <div class="box-grid justify2">FFFF</div>
+      </div>
+    </div>
+    
+    <footer class="center">
+      <p>Created by Kanyisa Ntombini</p>
+    </footer>
+  </div>
+</body>
+</html>
