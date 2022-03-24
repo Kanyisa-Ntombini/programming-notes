@@ -3,14 +3,17 @@
   display: grid;
 }
 .container-grid {
-  margin: 20px 0;
-  border: 5px solid green;
+  margin: 40px 0;
+  border: 1px solid black;
+}
+h2, h3, p {
+  margin: 20px;
 }
 
 /* Main */
-/*.definition, .grid-template, .grid-area {
-  
-}*/
+#template-rows, #template-columns, #fractions, #minmax, #grid-start-end, #grid-template-areas, #overlapping {
+  margin: 20px;
+}
 .box-grid {
   border: 5px solid purple;
   border-radius: 5px;
@@ -45,6 +48,8 @@
   grid-column-start: 2;
   grid-column-end: 4;
 }
+
+/* Grid template areas*/
 #grid-template-areas {
   grid-template-areas: "heading1 heading1" "main1 main2" "footer1 footer1";
   grid-template-rows: 1fr 2fr 1fr;
@@ -64,6 +69,8 @@
 .footer1 {
   grid-area: footer1;
 }
+
+/* overlapping*/
 #overlapping {
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -98,24 +105,29 @@
   background-color: blue;
   z-index: 5;
 }
+
+/* Justify items*/
 #justify-items {
-  width: 300px;
+  width: 500px;
   columns: 300px;
   grid-template: repeat(3, 150px) / 150px 150px;
-  background-color: goldenrod;
-  color: crimson;
+  background-color: grey;
   justify-items: center;
+  gap: 10px;
+  margin: 20px;
 }
 .justify {
   width: 100px;
 }
+
+/* Justify content*/
 #justify-content {
-  width: 300px;
+  width: 500px;
   columns: 300px;
   grid-template: repeat(3, 150px) / 150px 150px;
-  background-color: goldenrod;
-  color: crimson;
+  background-color: grey;
   justify-content: center;
+  margin: 20px;
 }
 .justify2 {
   width: 100px;

@@ -1,18 +1,24 @@
 /* Universal Styles */
-/*.container-big {
-  width: 720px;
+.container-small {
+  width: 480px;
   height: 240px;
   background-color: rgb(207, 207, 207);
 }
-
-.container-small {
-  width: 720px;
-  height: 160px;
-  background-color: rgb(207, 207, 207);
-}*/
-
+.border-big {
+  border: 1px solid black;
+  margin: 40px 0;
+  padding-left: 20px;
+}
+.border-small {
+  margin: 20px 0;
+}
 .flex {
   display: flex;
+}
+.display-boxes-in-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 /* Flexbox */
@@ -43,12 +49,6 @@
 }
 
 /* Justify Content */
-.justify-container {
-  width: 720px;
-  height: 160px;
-  background-color: rgb(207, 207, 207);
-}
-
 .flex-start {
   display: flex;
   justify-content: flex-start;

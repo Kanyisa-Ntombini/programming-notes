@@ -16,6 +16,7 @@
     <div class="header">
       <h1>CSS Cheatsheet</h1>
       <div class="nav">
+        <div><a href="../../index.html">Home</a></div>
         <a href="../tabs/grid.html">Grid</a>
         <a href="#">Flexbox</a>
         <a href="../../index.html">Positioning</a>
@@ -23,196 +24,201 @@
       </div>
     </div>
 
-    <!-- Display: Flex -->
-    <div>
-      <div>
-        <h3>Display: Flex</h3>
-        <div class="flex">
-          <div class="box blue">Blue</div>
-          <div class="box coral">Coral</div>
-          <div class="box purple">Purple</div>
+    <div class="main">
+      <!-- Display: Flex -->
+      <div id="display-flex" class="border-big">
+        <div class="border-small">
+          <h2>Flex</h2>
+          <h3>Display: flex</h3>
+          <div class="flex">
+            <div class="box blue">Blue</div>
+            <div class="box coral">Coral</div>
+            <div class="box purple">Purple</div>
+          </div>
+        </div>
+        <div class="border-small">
+          <h3>Display: Inline-flex</h3>
+          <div class="inline-flex">
+            <div class="box blue">Blue</div>
+            <div class="box coral">Coral</div>
+            <div class="box purple">Purple</div>
+          </div>
+          <div class="inline-flex">
+            <div class="box blue">Blue</div>
+            <div class="box coral">Coral</div>
+            <div class="box purple">Purple</div>
+          </div>
         </div>
       </div>
-      <div>
-        <h3>Display: Inline-flex</h3>
-        <div class="inline-flex">
-          <div class="box blue">Blue</div>
-          <div class="box coral">Coral</div>
-          <div class="box purple">Purple</div>
-        </div>
-        <div class="inline-flex">
-          <div class="box blue">Blue</div>
-          <div class="box coral">Coral</div>
-          <div class="box purple">Purple</div>
-        </div>
-      </div>
-    </div>
 
-    <!-- Justify- Content -->
-    <div>
-      <div>
-        <h3>Justify-Content</h3>
+      <!-- Justify- Content -->
+      <div class="border-big" id="justify-content">
+        <h2>Justify-Content</h2>
         <p>Justifies content from left to right across a page.</p>
         <p>
         .flex-start { <br>
-        display: flex; <br>
-        justify-content: flex-start; <br>
+          display: flex; <br>
+          justify-content: flex-start; <br>
         }
         </p>
-      </div>
-      <div>
-        <h4>Justify-Content: Flex-start</h4>
-        <div class="container-small flex-start">
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-        </div>
-      </div>
-      <div>
-        <h4>Justify-Content: Flex-end</h4>
-        <div class="container-small flex-end">
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-        </div>
-      </div>
-      <div>
-        <h4>Justify-Content: Center</h4>
-        <div class="container-small flex-center">
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-        </div>
-      </div>
-      <div>
-        <h4>Justify-Content: Space-around</h4>
-        <div class="container-small space-around">
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-        </div>
-      </div>
-      <div>
-        <h4>Justify-Content: Space-between</h4>
-        <div class="container-small space-between">
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Align-Items -->
-    <div>
-      <div>
-        <h3>Align-Items</h3>
-        <p>Aligns flex items vertically within a flex container.</p>
-        <p>
-          div { <br>
-            display: flex; <br>
-            align-items: flex-start; <br>
-          }
-        </p>
-      </div>
-      <div>
-        <h4>Align-Items: Flex-start</h4>
-        <div class="container-big align-start">
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-        </div>
-      </div>
-      <div>
-        <h4>Align-Items: Flex-end</h4>
-        <div class="container-big align-end">
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-        </div>
-      </div>
-      <div>
-        <h4>Align-Items: Center</h4>
-        <div class="container-big align-center">
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-        </div>
-      </div>
-      <div>
-        <h4>Align-Items: Baseline</h4>
-        <div class="container-big align-baseline">
-          <div class="box"></div>
-          <div class="box" id="baseline-center"></div>
-          <div class="box"></div>
-        </div>
-      </div>
-      <div>
-        <h4>Align-Items: Stretch</h4>
-        <p>The item will stretch from top to bottom in the container if a minimum height has been set or no height has been set.</p>
-        <div class="container-big align-stretch">
-          <div class="box-stretch"></div>
-          <div class="box-stretch"></div>
-          <div class="box-stretch"></div>
-        </div>
-      </div>
-    </div>
-
-      61 isaiah
-
-    <div>
-      <!-- Flex-grow, flex-shrink -->
-      <h3>Flex-grow, Flex-shrink</h3>
-        <p>Margins are unaffected by flex-grow and flex-shrink</p>
-        <div class="container-small flex">
-            <div class="box-grow"></div>
-            <div class="box-grow"></div>
-            <div class="box-grow"></div>
-        </div>
-        <div>
-          <h4>Flex-grow</h4>
-          <p>The default of flex-grow = 0. That is why items in a container do not automatically grow.</p>
-          <div>
-            .selector {
-              flex-grow = number(e.g. 2);
-            }
+        <div class="display-boxes-in-flex">
+          <div class="border-small">
+            <h3>Justify-Content: Flex-start</h3>
+            <div class="container-small flex-start">
+              <div class="box"></div>
+              <div class="box"></div>
+              <div class="box"></div>
+            </div>
           </div>
+          <div class="border-small">
+            <h3>Justify-Content: Flex-end</h3>
+            <div class="container-small flex-end">
+              <div class="box"></div>
+              <div class="box"></div>
+              <div class="box"></div>
+            </div>
+          </div>
+          <div class="border-small">
+            <h3>Justify-Content: Center</h3>
+            <div class="container-small flex-center">
+              <div class="box"></div>
+              <div class="box"></div>
+              <div class="box"></div>
+            </div>
+          </div>
+          <div class="border-small">
+            <h3>Justify-Content: Space-around</h3>
+            <div class="container-small space-around">
+              <div class="box"></div>
+              <div class="box"></div>
+              <div class="box"></div>
+            </div>
+          </div>
+          <div class="border-small">
+            <h3>Justify-Content: Space-between</h3>
+            <div class="container-small space-between">
+              <div class="box"></div>
+              <div class="box"></div>
+              <div class="box"></div>
+            </div>
+          </div>
+        </div>   
+      </div>
+
+      <!-- Align-Items -->
+      <div class="border-big" id="align-items">
+        <h2>Align-Items</h2>
+          <p>Aligns flex items vertically within a flex container.</p>
+          <p>
+            div { <br>
+              display: flex; <br>
+              align-items: flex-start; <br>
+            }
+          </p>
+        <div class="display-boxes-in-flex">
+          <div class="border-small">
+            <h4>Align-Items: Flex-start</h4>
+            <div class="container-small align-start">
+              <div class="box"></div>
+              <div class="box"></div>
+              <div class="box"></div>
+            </div>
+          </div>
+          <div class="border-small">
+            <h4>Align-Items: Flex-end</h4>
+            <div class="container-small align-end">
+              <div class="box"></div>
+              <div class="box"></div>
+              <div class="box"></div>
+            </div>
+          </div>
+          <div class="border-small">
+            <h4>Align-Items: Center</h4>
+            <div class="container-small align-center">
+              <div class="box"></div>
+              <div class="box"></div>
+              <div class="box"></div>
+            </div>
+          </div>
+          <div class="border-small">
+            <h4>Align-Items: Baseline</h4>
+            <div class="container-small align-baseline">
+              <div class="box"></div>
+              <div class="box" id="baseline-center"></div>
+              <div class="box"></div>
+            </div>
+          </div>
+          <div class="border-small">
+            <h4>Align-Items: Stretch</h4>
+            <p>The item will stretch from top to bottom in the container if a minimum height has been set or no height has been set.</p>
+            <div class="container-small align-stretch">
+              <div class="box-stretch"></div>
+              <div class="box-stretch"></div>
+              <div class="box-stretch"></div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+
+        61 isaiah
+
+      <div class="border-big" id="flex-grow">
+        <!-- Flex-grow, flex-shrink -->
+        <h2>Flex-grow, Flex-shrink</h2>
+          <p>Margins are unaffected by flex-grow and flex-shrink</p>
           <div class="container-small flex">
-            <div class="box-grow-shrink flexgrow-side">.flexgrow-side {flex-grow: 2 }</div>
-            <div class="box-grow-shrink flexgrow-center">.flexgrow-center {flex-grow: 1 }</div>
-            <div class="box-grow-shrink flexgrow-side">.flexgrow-side {flex-grow: 2 }</div>
+              <div class="box-grow"></div>
+              <div class="box-grow"></div>
+              <div class="box-grow"></div>
           </div>
-        </div>
-        <div>
-          <h4>Flex-shrink</h4>
-          <p>The default of flex-shrink = 1. That is why items automatically get smaller when the container gets small.</p>
           <div>
-            .selector {
-              flex-shrink = number(e.g. 2);
-            }
+            <h4>Flex-grow</h4>
+            <p>The default of flex-grow = 0. That is why items in a container do not automatically grow.</p>
+            <div>
+              .selector {
+                flex-grow = number(e.g. 2);
+              }
+            </div>
+            <div class="container-small flex">
+              <div class="box-grow-shrink flexgrow-side">.flexgrow-side {flex-grow: 2 }</div>
+              <div class="box-grow-shrink flexgrow-center">.flexgrow-center {flex-grow: 1 }</div>
+              <div class="box-grow-shrink flexgrow-side">.flexgrow-side {flex-grow: 2 }</div>
+            </div>
           </div>
-          <div class="container-flexshrink">
-            <div class="flexshrink-side"></div>
-            <div class="flexshrink-center"></div>
-            <div class="flexshrink-side"></div>
-          </div>
-        </div>
-        <div>
-          <h4>Flex Property</h4>
           <div>
-            flex: flex-grow-number flex-shrink-number flex-basis;
-            flex: flex-grow-number flex-basis;
+            <h4>Flex-shrink</h4>
+            <p>The default of flex-shrink = 1. That is why items automatically get smaller when the container gets small.</p>
+            <div>
+              .selector {
+                flex-shrink = number(e.g. 2);
+              }
+            </div>
+            <div class="container-flexshrink">
+              <div class="flexshrink-side"></div>
+              <div class="flexshrink-center"></div>
+              <div class="flexshrink-side"></div>
+            </div>
           </div>
-          <h4>Flex-wrap</h4>
-          <h4>Flex-flow</h4>
           <div>
-            flex-flow: flex-direction flex-wrap;
+            <h4>Flex Property</h4>
+            <div>
+              flex: flex-grow-number flex-shrink-number flex-basis;
+              flex: flex-grow-number flex-basis;
+            </div>
+            <h4>Flex-wrap</h4>
+            <h4>Flex-flow</h4>
+            <div>
+              flex-flow: flex-direction flex-wrap;
+            </div>
           </div>
-        </div>
+      </div>
     </div>
 
-  <footer class="center">
-    <p>Created by Kanyisa Ntombini</p>
-  </footer>
+    <div class="footer">
+      <p>Created by Kanyisa Ntombini</p>
+    </div>
+  </div>
 
   <script src="./script.js"></script>
 </body>
