@@ -1,4 +1,6 @@
 /* Universal Styles*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,700;1,900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +9,7 @@
 body {
   font-family: 'Lato', sans-serif;
   font-size: 16px;
+  margin: 2rem;
 }
 h1 {
   font-size: 3.125rem;
@@ -15,14 +18,14 @@ h2 {
   font-size: 35px;
   margin-bottom: 20px;
 }
-h3 {
-  font-weight: normal;
+.center {
+  text-align: center;
+}
+.justify {
+  text-align: justify;
 }
 .css-code {
   margin: 20px;
-}
-span {
-  color: lightseagreen;
 }
 .center {
   text-align: center;
@@ -37,8 +40,8 @@ span {
 }
 
 /* HEADER */
-h1 {
-  background-color: orange;
+.title {
+  background-color: rgba(255, 102, 0, 0.836);
   padding: 1rem;
 }
 .nav {
@@ -46,7 +49,7 @@ h1 {
   top: 0;*/
   display: flex;
   justify-content: space-around;
-  background-color: orange;
+  background-color: rgba(255, 102, 0, 0.836);
   border: 0.2rem solid black;
   border-radius: 0.5rem;
   margin: 1rem 0;
