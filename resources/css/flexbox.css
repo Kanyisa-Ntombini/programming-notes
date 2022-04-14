@@ -1,9 +1,19 @@
 /* Universal Styles */
+.border {
+  border: 0.1rem solid black;
+  margin: 1rem 0;
+  padding: 0 1rem;
+}
 
-/* About */
-#about, #about h3, #about h4{
+/* Main */
+.image-container {
+  width: 50%;
+  margin: 1rem 0;
+}
+#about, h3, h4{
   margin: 1rem 0;
 }
 #about span {
   font-weight: bold;
 }
+
