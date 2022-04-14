@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Cheat Sheet</title>
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="../css/display.css">
+</head>
+<body>
+  <div class="header">
+      <div class="nav">
+        <a href="../../index.html">Home</a>
+        <a href="../../index.html">Positioning</a>
+        <a href="#">Display</a>
+        <a href="./flexbox.html">Flexbox</a>
+        <a href="./grid.html">Grid</a>
+      </div>
+      <h1 class="title">CSS Cheatsheet</h1>
+    </div>
+
+    <div class="main">
+      <div id="display">
+        <h2>Display</h2>
+        <p>Each element in CSS has a rectangular box that surrounds it. The Display property lets how know how this box will be shown in our web page.</p>
+  
+        <table>
+          <thead>
+            <tr>
+              <th>Property</th>
+              <th>Description</th>
+              <th>Example</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Block</td>
+              <td>
+                <ul>
+                  <li>It fills the entire width of the page by default</li>
+                  <li>It is not displayed in the same line as the content around it therefore a new line is required for each element</li>
+                  <li>The width and height properties can be set</li>
+                </ul>
+              </td>
+              <td><img class="table-images" src="./resources/images/block.jpeg" alt=""></td>
+            </tr>
+            <tr>
+              <td>Inline</td>
+              <td>
+                <ul>
+                  <li>It has a box that wraps tightly around its content, only taking up the amount of space necessary to display its content</li>
+                  <li>It does not require a new line after each element</li>
+                  <li>The height and width of these elements cannot be specified in the CSS document</li>
+                  <li>Examples: &lt;a&gt; , &lt;em&gt; and &lt;strong&gt;</li>
+                </ul>
+              </td>
+              <td><img class="table-images" src="./resources/images/inline.jpeg" alt=""></td>
+            </tr>
+            <tr>
+              <td>Inline-block</td>
+              <td>
+                <ul>
+                  <li>It combines features of both inline and block elements</li>
+                  <li>Inline-block elements can appear next to each other</li>
+                  <li>The width and height properties can be set</li>
+                </ul>
+              </td>
+              <td><img class="table-images" src="./resources/images/inlineblock.jpeg" alt=""></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>Created by Kanyisa Ntombini</p>
+    </div>
+
+  <script src="./resources/js/script.js"></script>
+</body>
+</html>

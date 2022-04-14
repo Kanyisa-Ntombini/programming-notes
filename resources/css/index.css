@@ -9,14 +9,13 @@
 body {
   font-family: 'Lato', sans-serif;
   font-size: 16px;
-  margin: 2rem;
+  margin: 0 1.5rem;
 }
 h1 {
   font-size: 3.125rem;
 }
 h2 {
-  font-size: 35px;
-  margin-bottom: 20px;
+  font-size: 2.1875rem;
 }
 .center {
   text-align: center;
@@ -24,50 +23,45 @@ h2 {
 .justify {
   text-align: justify;
 }
-.css-code {
-  margin: 20px;
-}
 .center {
   text-align: center;
 }
-.container-small {
-  width: 200px;
-  height: 200px;
-  background-color: grey;
-}
-.header, .main, .footer {
-  margin: 40px;
-}
 
 /* HEADER */
-.title {
-  background-color: rgba(255, 102, 0, 0.836);
-  padding: 1rem;
-}
 .nav {
-  /*position: fixed;
-  top: 0;*/
+  position: fixed;
+  top: 0;
+  z-index: 5;
+  width: 96%;
+  height: 2.5rem;
   display: flex;
   justify-content: space-around;
-  background-color: rgba(255, 102, 0, 0.836);
-  border: 0.2rem solid black;
+  align-items: center;
+  background-color: lightblue;
+  border: 0.1rem solid black;
   border-radius: 0.5rem;
-  margin: 1rem 0;
-  padding: 0.5rem;
 }
-
 .nav a {
   color: black;
 }
 .nav a:hover {
   text-decoration: none;
 }
+.title {
+  position: relative;
+  top: 4.5rem;
+  height: 5rem;
+  padding: 1rem;
+  background-color: lightblue;
+}
 
 /* MAIN */
-.positioning, .display {
-  border: 1px solid black;
-  margin: 40px 0;
-  padding: 20px;
+.main {
+  position: relative;
+  top: 6.5rem;
+}
+#positioning h2 {
+  margin-bottom: 1rem;
 }
 table {
   margin-top: 20px;
@@ -92,3 +86,8 @@ ul {
   width: 300px;
 }
 /* FOOTER */
+.footer {
+  position: relative;
+  top: 6.5rem;
+  margin: 1rem 0;
+}
